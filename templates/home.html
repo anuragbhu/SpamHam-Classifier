@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>SpamHam Classifier</title>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='spam-favicon.ico') }}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <script
+      src="https://kit.fontawesome.com/5f3f547070.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body style="background-color: black">
+    <!-- Website Title -->
+    <div class="container">
+      <h1 class="container-heading">
+        <span>SpamHam Classifier</span>
+        <div class="description">
+          <p>
+            A Machine Learning Web Application (Built with Flask) for Short
+            Message Service (SMS).
+          </p>
+        </div>
+      </h1>
+    </div>
+
+    <!-- Text Area -->
+    <div class="ml-container">
+      <form action="{{ url_for('predict') }}" method="POST">
+        <textarea
+          style="background-color: lightgreen"
+          class="message-box"
+          name="message"
+          rows="20"
+          cols="100"
+          placeholder="Enter Or Paste Your Message Here..."
+        ></textarea
+        ><br />
+        <input type="submit" class="my-cta-button" value="Predict" />
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="contact">
+        <a target="_blank" href="https://github.com/anuragbhu"
+          ><i class="fab fa-github fa-lg contact-icon"></i
+        ></a>
+        <a target="_blank" href="https://www.linkedin.com/in/anuragbhu"
+          ><i class="fab fa-linkedin fa-lg contact-icon"></i
+        ></a>
+      </div>
+      <p class="footer-description"><b>Made with ❤️ by Anurag Pandey</b></p>
+    </div>
+  </body>
+</html>
