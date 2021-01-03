@@ -6,14 +6,21 @@ import pickle
 df = pd.read_csv('Spam SMS Collection', sep='\t', names=['label', 'message'])
 
 # Importing essential libraries for performing Natural Language Processing on 'SMS Spam Collection' dataset
+# Natural Language Toolkit
 import nltk
+# Regular Expression
 import re
+# Stop Words: A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that a search engine has been programmed to ignore, both when indexing entries for searching and when retrieving them as the result of a search query.
 nltk.download('stopwords')
+# The nltk.corpus package defines a collection of corpus (refers to a collection of texts) reader classes
 from nltk.corpus import stopwords
+# Stemming is the process of producing morphological variants of a root/base word.
 from nltk.stem.porter import PorterStemmer
 
 # Cleaning the messages
+# list
 corpus = []
+# tuples
 ps = PorterStemmer()
 
 for i in range(0,df.shape[0]):
