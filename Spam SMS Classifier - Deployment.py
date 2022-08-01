@@ -2,7 +2,7 @@
 import pandas as pd
 import pickle
 
-# Loading the dataset
+# Loading the dataset from https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset
 df = pd.read_csv('Spam SMS Collection', sep='\t', names=['label', 'message'])
 
 # Importing essential libraries for performing Natural Language Processing on 'SMS Spam Collection' dataset
