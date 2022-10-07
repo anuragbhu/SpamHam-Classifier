@@ -6,7 +6,7 @@
   ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg)
   ![NLTK](https://img.shields.io/badge/Library-NLTK-orange.svg)
   
-  🔥 A Machine Learning Web Application (Built with Flask) for Short Message Service (SMS). 🔥
+  🔥 A Machine Learning Web Application (Built with Flask) for classifying Emails and SMS into Spam and Ham. 🔥
   
   • If you want to view the deployed model, click on the following link:<br />
     Deployed at: _https://spamham-classifier.herokuapp.com/_
